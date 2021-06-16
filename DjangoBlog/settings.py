@@ -98,7 +98,7 @@ WSGI_APPLICATION = 'DjangoBlog.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
-
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -111,7 +111,19 @@ DATABASES = {
         'OPTIONS': {
             'charset': 'utf8mb4'},
     }}
+'''
 
+DATABASES = {
+    'default':{
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'djangoblog',
+        'USER': 'djangoblog',
+        'PASSWORD': 'DjAnGoBlOg123!@#',
+        'HOST': 'localhost',
+        'PORT': 3306,
+        'OPTIONS': {'charset': 'utf8mb4'},
+        }            
+}
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
 
